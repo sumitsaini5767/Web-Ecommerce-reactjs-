@@ -1,0 +1,508 @@
+/*================================================
+Checkout CSS
+=================================================*/
+/* .user-actions {
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  padding: 15px 20px;
+  border-top: 3px solid #f53f85;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.user-actions i {
+  color: #f53f85;
+  margin-right: 2px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.user-actions span {
+  display: inline-block;
+  color: #f53f85;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.user-actions span a {
+  display: inline-block;
+  color: #000000;
+}
+
+.user-actions span a:hover, .user-actions span a:focus {
+  color: #f53f85;
+}
+
+.billing-details .title {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.billing-details .title::before {
+  content: '';
+  position: absolute;
+  background: #f53f85;
+  bottom: -1px;
+  left: 0;
+  width: 50px;
+  height: 1px;
+}
+
+.billing-details .form-group {
+  margin-bottom: 25px;
+}
+
+.billing-details .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.billing-details .form-group label .required {
+  color: red;
+}
+
+.billing-details .form-group .nice-select {
+  float: unset;
+  line-height: 48px;
+  color: #000000;
+  border: none;
+  background-color: #f5f5f5 !important;
+  font-weight: normal;
+  font-size: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.billing-details .form-group .nice-select .list {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+          box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  border-radius: 0;
+  margin-top: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.billing-details .form-group .nice-select .list .option {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.billing-details .form-group .nice-select .list .option:hover {
+  background-color: #f53f85 !important;
+  color: #ffffff;
+}
+
+.billing-details .form-group .nice-select .list .option.selected {
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.billing-details .form-group .nice-select:after {
+  right: 20px;
+}
+
+.billing-details .form-check {
+  margin-bottom: 20px;
+}
+
+.billing-details .form-check .form-check-label {
+  color: #000000;
+}
+
+.billing-details .form-check label {
+  position: relative;
+  left: -3px;
+  top: 1px;
+  font-weight: 500;
+}
+
+.billing-details .col-lg-12:last-child .form-group {
+  margin-bottom: 0;
+}
+
+.order-details .title {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.order-details .title::before {
+  content: '';
+  position: absolute;
+  background: #f53f85;
+  bottom: -1px;
+  left: 0;
+  width: 50px;
+  height: 1px;
+}
+
+.order-details .order-table table {
+  margin-bottom: 0;
+}
+
+.order-details .order-table table thead tr th {
+  border-bottom-width: 0;
+  vertical-align: middle;
+  border-color: #eaedff;
+  padding: 12px 20px 10px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.order-details .order-table table tbody tr td {
+  vertical-align: middle;
+  border-color: #eaedff;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.order-details .order-table table tbody tr td.product-name a {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.order-details .order-table table tbody tr td.order-subtotal span, .order-details .order-table table tbody tr td.order-shipping span, .order-details .order-table table tbody tr td.total-price span {
+  color: #000000;
+  font-weight: 700;
+}
+
+.order-details .order-table table tbody tr td.shipping-price, .order-details .order-table table tbody tr td.order-subtotal-price, .order-details .order-table table tbody tr td.product-subtotal {
+  font-weight: 700;
+  color: #000000;
+}
+
+.order-details .payment-box {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:checked, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
+  display: none;
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:checked + label, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label {
+  padding-left: 27px;
+  cursor: pointer;
+  display: block;
+  color: #000000;
+  position: relative;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:checked + label::before, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:checked + label::after, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #f53f85;
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.order-details .payment-box .payment-method p [type="radio"]:checked + label::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.order-details .payment-box .default-btn {
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+          box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2);
+  display: block;
+  text-align: center;
+} */
+
+
+
+
+/* customize css */
+.checkout-area{
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    padding-bottom: 0 !important;
+}
+
+.checkout-area .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.user-actions{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 3px solid #f53f85;
+  padding: 1.2% 1%;
+  margin-bottom: 3%;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+
+.user-actions span{
+  color: #f53f85;
+}
+
+.user-actions i {
+  color: #f53f85;
+  margin-right: 0.3vw;
+  font-size: 20px;
+  position: relative;
+}
+
+.checkout-area .container form .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.billing-details{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.billing-details h3{
+  position: relative;
+  font-size: 1.4vw;
+  margin-bottom: 5%;
+}
+
+.billing-details .title{
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid #eeeeee;
+}
+.billing-details .title::before {
+  content: '';
+  position: absolute;
+  background: #f53f85;
+  bottom: 0;
+  left: 0;
+  width: 3.2vw;
+  height: 0.04vw;
+}
+
+.billing-details .form-group label {
+  display: block;
+  margin-bottom: 1.5%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.95vw;
+}
+
+.billing-details .form-group label .required {
+  color: red;
+}
+
+.billing-details .form-control{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.combine_form_control{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2.5%;
+}
+
+.combine_form_control .form-control{
+  width: 20.7vw;
+}
+
+.form-check{
+  margin-bottom: 3%;
+}
+.form-check-input {
+  width: 1em;
+  height: 1em;
+  margin-top: .25em;
+  vertical-align: top;
+  margin-right: 1%;
+}
+
+#notes{
+  height: 18vh !important;
+}
+
+
+
+
+
+
+
+.order-details{
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+
+.order-details h3{
+  position: relative;
+  font-size: 1.4vw;
+  margin-bottom: 5%;
+}
+
+.order-details .title{
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.order-details .title::before {
+  content: '';
+  position: absolute;
+  background: #f53f85;
+  bottom: 0;
+  left: 0;
+  width: 3.2vw;
+  height: 0.04vw;
+}
+
+
+.order-details .table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border: 1px solid #dee2e6;
+}
+
+.order-details .order-table thead{
+    display: flex;
+    width: 100%;
+}
+
+.order-details .order-table thead tr{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: 2px solid;
+}
+
+.order-details .order-table thead tr th{
+  padding: 2% 3%;
+}
+
+.order-details .order-table thead tr th:nth-child(1){
+  display: flex;
+  width: 70%;
+  border-right: 1px solid #dee2e6;
+}
+
+.order-details .order-table table thead tr th {
+  border-bottom-width: 0;
+  vertical-align: middle;
+  border-color: #eaedff;
+  font-weight: 700;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+
+
+
+.order-details .order-table tbody{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.order-details .order-table tbody tr td{
+  padding:2.8%;
+}
+
+.order-details .order-table tbody tr td:nth-child(1){
+  width: 70%;
+  border-right: 1px solid #dee2e6;
+  /* padding: 3%; */
+}
+
+.order-details .order-table tbody tr{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.order_headings{
+  font-weight: 600;
+  font-size: 1vw;
+}
+
+
+
+/* -------------------------------- */
+.payment-box{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  padding: 4%;
+}
+
+.payment-box input{
+  margin-right: 1%;
+}
+
+input[type='radio'] {
+  accent-color:#f53f85;
+}
+
+.payment-method label{
+  font-weight: 600;
+  color: black;
+}
+
+.placeOrderBtn{
+  margin-top: 3%;
+  text-align: center;
+}

@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.product-area{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5.9%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.product_area_product{
+    /* height: 80vh; */
+    position: relative;
+    width: 32%;
+}
+
+.product_area_product_img{
+    position: relative;
+    height: 74vh;
+    width: 100%;
+    background-image: url("../../assets/img/products/img13.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 3vh;
+}
+
+.product_area_product_icons{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tooltip-labels{
+    position: absolute;
+    background-color: #000000;
+}
+.tooltip-label1{
+    /* -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    position: absolute;
+    padding: 0 10px;
+    line-height: 28px;
+    font-size: 12px;
+    letter-spacing: .3px;
+    visibility: hidden;
+    white-space: nowrap;
+    opacity: 0;
+    color: transparent;
+    background-color: transparent;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #000000;
+    color: transparent;
+    color: red; */
+    visibility: hidden;
+    opacity: 0;
+    color: red;
+}
+
+.product_area_product_icons box-icon{
+    /* visibility: hidden; */
+    opacity: 0;
+    padding: 15%;
+    border-radius: 50%;
+    background-color: white;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: -100%; */
+    transform: translateY(80%);
+    transition: opacity 0.4s ease, transform 0.4s ease-in-out;
+}
+
+/* .product_area_product_icon1{
+    position: relative;
+    z-index: 5;
+    border: 2px solid black;
+} */
+
+/* .product_area_product_icon1:hover .tooltip-labels .tooltip-label1{
+    visibility: visible!important;
+    opacity: 1!important;
+} */
+
+.product_area_product:hover .product_area_product_icon1 box-icon{
+    transition-delay: 0.2s;
+    transform: translateY(0%);
+    opacity: 1;
+    /* visibility: visible; */
+}
+.product_area_product:hover .product_area_product_icon2 box-icon{
+    transition-delay: 0.3s;
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}.product_area_product:hover .product_area_product_icon3 box-icon{
+    transition-delay: 0.4s;
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.product_area_product_icons box-icon:hover {
+    /* color: white; */
+    fill: white;
+    cursor: pointer;
+    background-color: #f53f85;
+}
+
+.new-tag{
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    background-color: green;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    padding: 0.8% 1.6%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+
+.products-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 20vh;
+    padding: 5% 0;
+}
+.products-content .category{
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    color: #f53f85;
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.products-content h3{
+    font-weight: 600;
+    font-size: 1.3vw;
+    margin-bottom: 2%;
+}
+
+.star-rating{
+    margin-bottom: 2%;
+}
+
+.price{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.old_price{
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.new-price{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #212529;
+    transition: opacity 0.2s ease;
+}
+.add-to-cart{
+    display: flex;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1vw;
+    color: #777777;
+    font-weight: 600;
+    bottom: 0;
+    opacity: 0;
+    z-index: 3;
+    transform: translateX(10%);
+    transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+}
+
+.product_area_product:hover .new-price,
+.product_area_product:hover .old-price{
+    opacity: 0;
+}
+
+.product_area_product:hover .add-to-cart{
+    opacity: 1;
+    transform: translateX(0);
+}

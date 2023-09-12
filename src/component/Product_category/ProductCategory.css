@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.owl-nav1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  padding: 0 2%;
+  top:53%;
+}
+.owl-nav1 button{
+    padding: 0.7% 0.83%;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid #cccccc;
+  }
+  .owl-nav1 button:hover{
+    transition:ease-in 0.5s!important;
+    border: none;
+    background-color: #f53f85;
+  }
+  .owl-nav1 button:hover svg{
+    fill: white;
+  }
+  
+  .owl-nav1 i{
+    /* display: none; */
+    color:#cccccc;  
+    font-size: 120%;
+  }
+
+  .owl-nav1 svg{
+    font-size: 1.6vw;
+    font-weight: lighter ;
+  }
+  
+
+   .ProductCategory{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    /* flex-direction: column; */
+    /* height: 80vh; */
+    align-items: center;
+   }
+
+   .product-category_items{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+   }
+
+   .product-category-item_offer{
+    display: flex;
+    position: absolute;
+    width: 27%;
+    height: 30%;
+    padding: 3%;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+    border-radius: 5px;
+    background-color: white;
+    
+   }
+
+   .product-category-item_offer h3{
+    font-size: 2vw;
+    font-weight: 700;
+    /* line-height: 7vh; */
+   }
+
+   .product-category-item_offer .default-btn{
+        display: flex;
+        width: fit-content;
+   }
+
+
+   

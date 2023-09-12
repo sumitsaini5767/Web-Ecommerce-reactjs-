@@ -1,0 +1,63 @@
+.NavigationSection_title ul{
+    width: 12vw;
+}
+
+.customer-service-area{
+    padding: 0 6%;
+}
+
+.customer-service-content h3 {
+    position: relative;
+    padding-left: 2.5%;
+    margin-bottom: 1.6%;
+    font-size: 1.44vw;
+    font-weight: 700;
+  }
+  
+  .customer-service-content h3 i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f53f85;
+  }
+  
+  .customer-service-content h3:not(:first-child) {
+    margin-top: 2.5%;
+  }
+  
+  .customer-service-content ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+  
+  .customer-service-content ul li {
+    color: #777777;
+    margin-bottom: 1.2%;
+    position: relative;
+    padding-left: 0.9%;
+  }
+  
+  .customer-service-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 0.3vw;
+    height: 0.7vh;
+    border-radius: 50%;
+    background: #f53f85;
+  }
+  
+  .customer-service-content ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .customer-service-content ul li a {
+    display: inline-block;
+    color: #777777;
+  }
+  
+  .customer-service-content ul li a:hover {
+    color: #000000;
+  }

@@ -1,0 +1,159 @@
+.NavigationSection_title ul{
+    width: 9vw;
+}
+
+.contact-area{
+    display: flex;
+    width: 100%;
+    padding: 0 6%;
+}
+
+.contact-area .row{
+    display: flex;
+    width: 100%;
+}
+
+.contact-area .row .contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+}
+
+.contact-area .row .contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+}
+
+.contact-info h3{
+    font-size: 1.45vw;
+    padding: 2.6% 0;
+}
+
+.contact-info .contact-list li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2%;
+    position: relative;
+    font-weight:400;
+}
+.contact-info .contact-list li i {
+    display: inline-flex;
+    align-items: center;
+    color: #f53f85;
+    font-size: 1.3vw;
+    margin-right: 1%;
+}
+
+.contact-info .contact-list li a {
+    font-weight: 600;
+}
+
+.contact-info .contact-list li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #f53f85;
+}
+
+.contact-info .contact-list li a:hover  .contact-info .contact-list li a::before{
+    width: 15px;
+}
+
+
+.contact-info .opening-hours li{
+    margin-bottom: 2.3%;
+}
+
+.social{
+    display: flex;
+}
+
+
+.contact-info .social li a {
+    margin-right: 2%;
+}
+
+.contact-info .social li a {
+    width: 4.5vh;
+    height: 4.6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f53f85;
+    background-color: #f4f4f4;
+    font-size: 1.22vw;
+    position: relative;
+    border-radius: 2px;
+    margin-right: 0.3vw;
+}
+
+.contact-info .social li a i {
+   display: flex;
+   /* align-items: center; */
+   justify-content: center;
+   position: relative;
+   /* top:22%;s */
+}
+
+.contact-info .social li a:hover {
+    background-color: #f53f85;
+    color: #ffffff;
+  }
+
+
+
+.contact-form h3{
+    font-size: 1.45vw;
+    padding: 1.8% 0;
+}
+
+.contact-form #contactForm .row{
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+}
+
+#contactForm .row .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:2.6% ;
+}
+
+.contact-form form .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.95vw;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+}
+
+.contact-form form .form-group label span{
+    color: red;
+}
+
+.contact-form form .form-group textarea {
+   height: 17vh !important;
+}
+
+.contact-form form button{
+    padding: 1.6%;
+    width: 22.5%;
+}
+
+
+#map{
+    width: 100%;
+}
+
+#map iframe{
+    width: 100%;
+    height: 70vh;
+    border: none;
+}

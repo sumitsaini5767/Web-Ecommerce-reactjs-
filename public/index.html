@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    
+
+    <!-- Links of CSS files -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link real="stylesheet" href="/node_modules//owl.carousel//dist/assets/owl.theme.default.min.css"/>
+
+    <link rel="stylesheet" href="https://boxicons.com/css/boxicons.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Xton - eCommerce</title>
+
+
+    <link rel="icon" type="image/png" href="/src/assets/img/favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  
+  <!-- Links of JS files -->
+    
+  
+    <script>
+      const webpack = require('webpack');
+        plugins: [
+            new webpack.ProvidePlugin({
+              $: 'jquery',
+              jQuery: 'jquery',
+              'window.jQuery': 'jquery'
+            }),
+        ]
+    </script>
+    
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
+
+    <!-- <script>$(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        slideBy: 1,
+        autoplay: false,
+        margin: 0,
+        nav: true,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    }); -->
+
+    
+    </script>
+
+
+    <script>
+      $(".product-category").owlCarousel({
+        loop: true,
+        slideBy: 1,
+        autoplay: true,
+        margin: 0,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+
+      var owl = $(".product-category");
+      owl.owlCarousel();
+      // Go to the next item
+      $(".owl-next").click(function () {
+        owl.trigger("next.owl.carousel");
+      });
+      // Go to the previous item
+      $(".owl-prev").click(function () {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger("prev.owl.carousel", [300]);
+      });
+    </script>
+  </body>
+</html>

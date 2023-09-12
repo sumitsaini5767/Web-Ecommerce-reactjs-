@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.SocialMediaSection {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.SocialMediaSection_tiles{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+}
+  
+.SocialMediaSection_tiles .items{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.SocialMediaSection_tiles a {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 32px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.SocialMediaSection_tiles a i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 25px;
+}
+
+
+
+
+
+
+.SocialMediaSection_slides{
+  display: flex;
+  width: 100%;
+  
+}
+
+.single-instagram-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.single-instagram-post a{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom:10%;
+}
+.single-instagram-post a i{
+  font-size: 2rem;
+}
+
+.single-instagram-post .link-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.single-instagram-post::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-instagram-post a{
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.single-instagram-post:hover a {
+  animation: insta-a 0.5s linear;
+  transition: ease-in 0.5s;
+  visibility: visible;
+  opacity: 1;
+} 
+
+.single-instagram-post:hover::before {
+  animation: insta-anim 0.5s linear;
+  visibility: visible;
+  opacity: .50;
+}
+
+@keyframes insta-anim {
+  0% { top: 100%;}
+  100% {top: 0}
+}
+@keyframes insta-a {
+  0% { bottom: -100%;}
+  100% {top: auto}
+}
+
+
+
+.single-facebook-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.single-facebook-post a{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom:10%;
+}
+.single-facebook-post a i{
+  font-size: 2rem;
+}
+
+.single-facebook-post .link-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.single-facebook-post::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-facebook-post a{
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.single-facebook-post:hover a {
+  animation: insta-a 0.5s linear;
+  transition: ease-in 0.5s;
+  visibility: visible;
+  opacity: 1;
+} 
+
+.single-facebook-post:hover::before {
+  animation: insta-anim 0.5s linear;
+  visibility: visible;
+  opacity: .50;
+}
+
+@keyframes insta-anim {
+  0% { top: 100%;}
+  100% {top: 0}
+}
+@keyframes insta-a {
+  0% { bottom: -100%;}
+  100% {top: auto}
+}
+
+
+
+.owl-nav2{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 2%;
+  z-index: 10;
+  top:55%;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.owl-nav2 button{
+  padding: 0.75% 1.1%;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #cccccc;
+}
+.owl-nav2 button:hover{
+  transition:ease-in 0.5s!important;
+  border: none;
+  background-color: #f53f85;
+}
+.owl-nav2 button:hover i{
+  color: white;
+}
+
+.owl-nav2 i{
+  color:#cccccc;  
+  font-size: 120%;
+}
+
+.instagram-area:hover .owl-nav2{
+  transition: ease-in-out 0.5s;
+  visibility: visible;
+  opacity: 1;
+}
+

@@ -1,0 +1,106 @@
+.NavigationSection_title ul{
+    width: 8vw;
+}
+
+
+.compare-area{
+    display: flex;
+    width: 100%;
+    padding:0 5.7%;
+}
+
+.compare-area table{
+    border-collapse: collapse;
+}
+
+.compare-area table tbody tr td{
+    font-weight: 400;
+    color: #777777;
+    padding: 1.8% 1.4%;
+    border:1px solid #dee2e6;
+}
+
+.compare-area table tbody tr td .remove-btn{
+    position: relative;
+    margin-bottom: 5%;
+}
+.compare-area table tbody tr td .remove-btn i{
+    color: red;
+}
+
+.compare-area table tbody tr td .products-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    /* padding-bottom: 0;
+    margin-bottom: 0; */
+    height: auto;
+}
+.compare-area table tbody tr td .products-content .price{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+}
+.compare-area table tbody tr td .products-content .price .old-price{
+    text-decoration: line-through;
+    color: #777777;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+.compare-area table tbody tr td .products-content .price .new-price{
+    color: #777777;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+
+.compare-area table tbody tr td .products-content .add-to-cart {
+    display: flex;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1vw;
+    color: #777777;
+    font-weight: 600;
+    top:46%;
+    left:-2%;
+    opacity: 0;
+    z-index: 3;
+    transform: translateX(10%);
+    transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+  }
+
+.compare-area table tbody tr td .products-content :hover .compare-area table tbody tr td .products-content .add-to-cart{
+   opacity: 1;
+}
+
+
+
+.compare-area table tbody tr td .products-content .star-rating{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 25%;
+    color: #f49f0b
+}
+
+
+
+
+
+.compare-area table tr td:nth-child(1) {
+    font-weight: 600;
+    font-size: 1vw;
+    text-transform: uppercase;
+    width: 10%;
+    color: black;
+}
+.compare-area table tr td:nth-child(2) {
+    width: 30%;
+}
+.compare-area table tr td:nth-child(3) {
+    width: 30%;
+}
+.compare-area table tr td:nth-child(4) {
+    width: 30%;
+}
